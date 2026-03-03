@@ -17,7 +17,7 @@ public class ListaInteri {
 
     public int getElementoSuccessivo() {
         int elemento = elencoInteri[index];
-        elemento++;
+        index++;
         return elemento;
 
     }
@@ -28,7 +28,7 @@ public class ListaInteri {
     }
 
     public void addElemento(int nuovoElemento) {
-        int[] nuovoElencoInteri = elencoInteri;
+        int[] nuovoElencoInteri = new int[elencoInteri.length + 1];
         for (int i = 0; i < elencoInteri.length; i++) {
             nuovoElencoInteri[i] = elencoInteri[i];
         }

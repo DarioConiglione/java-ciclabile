@@ -3,16 +3,21 @@ package org.lessons.java.lista;
 public class ListaInteri {
 
     private int[] elencoInteri;
+    private int index;
 
-    public ListaInteri(int[] interi) {
-        this.elencoInteri = interi;
+    public ListaInteri(int[] elencoInteri) {
+        this.elencoInteri = elencoInteri;
     }
 
-    public void getElementoSuccessivo() {
+    public int getElementoSuccessivo() {
+        int elemento = elencoInteri[index];
+        elemento++;
+        return elemento;
 
     }
 
-    public void hasAncoraElementi() {
+    public boolean hasAncoraElementi() {
+        return index < elencoInteri.length;
 
     }
 

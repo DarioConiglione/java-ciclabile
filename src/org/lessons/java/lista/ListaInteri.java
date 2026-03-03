@@ -27,11 +27,14 @@ public class ListaInteri {
 
     }
 
-    public void addElemento() {
+    public void addElemento(int nuovoElemento) {
         int[] nuovoElencoInteri = elencoInteri;
         for (int i = 0; i < elencoInteri.length; i++) {
             nuovoElencoInteri[i] = elencoInteri[i];
         }
+        nuovoElencoInteri[nuovoElencoInteri.length - 1] = nuovoElemento;
+        this.elencoInteri = nuovoElencoInteri;
+
     }
 
 }
